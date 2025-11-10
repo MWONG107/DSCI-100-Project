@@ -1,0 +1,3 @@
+ibrary(tidyverse)
+players <- read_csv("Data/players.csv")
+sessions <- read_csv("Data/sessions.csv")
