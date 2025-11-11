@@ -1,10 +1,10 @@
 options(repr.plot.width = 10, repr.plot.height = 7)
 
 Question_Plot <- players |>
-    ggplot(aes(x = experience, y = played_hours, color = subscribe)) +
+    ggplot(aes(x = Age, y = played_hours, color = subscribe)) +
         geom_point() +
 #Change 1, Added Coord Cartesian
 coord_cartesian(ylim = c(0,6)) +
-        labs(x = "Player Experience", y = "Player Playtime", color = "Did they Subscribe")
+        labs(x = "Player Age", y = "Player Playtime", color = "Did they Subscribe")
     
 Question_Plot
