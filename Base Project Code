@@ -23,3 +23,12 @@ select(hashedEmail, start_date, start_clock_time, end_date, end_clock_time,
          original_start_clock_time, original_end_clock_time, original_start_date, original_end_date)
 sessions
 # Only the sessions dataset needs actual tidying, the players one is fine. 
+
+#Change 2, Finding the mean of the players dataset
+mean_table <- players |>
+  summarise(
+    Mean_Played_Hours = mean(played_hours, na.rm = TRUE),
+    Mean_Age = mean(Age, na.rm = TRUE)
+  )
+
+mean_table
